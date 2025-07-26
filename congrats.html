@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Thank You - End Thirst Now</title>
+  <style>
+    body {
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /* Subtle gradient with yellow, grey, and blue */
+      background: linear-gradient(
+        135deg,
+        #ffe082 0%,   /* Soft yellow */
+        #e3eaf2 40%,  /* Light grey-blue */
+        #b0bec5 70%,  /* Gentle blue-grey */
+        #90cbe9 100%  /* Soft blue */
+      );
+      font-family: Georgia, serif;
+    }
+    .congrats-box {
+      background: rgba(255,255,255,0.93);
+      border-radius: 18px;
+      box-shadow: 0 8px 40px rgba(80,120,180,0.11);
+      padding: 48px 32px;
+      max-width: 440px;
+      text-align: center;
+      animation: fadeIn 0.8s;
+    }
+    .congrats-message {
+      font-size: 1.4rem;
+      color: #35658c;
+      font-weight: bold;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+    .icon {
+      font-size: 2.5rem;
+      margin-bottom: 18px;
+      display: block;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(40px);}
+      to   { opacity: 1; transform: translateY(0);}
+    }
+    .back-link {
+      display: inline-block;
+      margin-top: 22px;
+      text-decoration: none;
+      color: #5c7fa6;
+      font-size: 1.05rem;
+      border-bottom: 1px dotted #90cbe9;
+      transition: color 0.18s;
+    }
+    .back-link:hover {
+      color: #1d3557;
+    }
+  </style>
+</head>
+<body>
+  <div class="congrats-box">
+    <span class="icon">🎉</span>
+    <div class="congrats-message">
+      Thank you for supporting clean water!<br>
+      Together, we are making a difference.
+    </div>
+    <a href="charity.html" class="back-link">Back to main page</a>
+  </div>
+</body>
+</html>
